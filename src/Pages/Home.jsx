@@ -1,4 +1,5 @@
 import Navbar from "../Component/Navbar";
+import Scanner from "../Component/Scanner";
 import SearchTab from "../Component/SearchTab";
 
 function Home(){
@@ -6,6 +7,7 @@ function Home(){
     <>
      <Navbar/>
      <SearchTab/>
+     <Scanner/>
     </>
     )
 }
