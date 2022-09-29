@@ -45,7 +45,7 @@ function Navbar() {
     <Link style={{padding:"10px"}}>Support</Link>
     <Link style={{padding:"10px"}}>Trips</Link>
     {/* <span style={{padding:"10px"}} ><BsFillBellFill /></span> */}
-    <Link style={{padding:"10px"}}>Sign In</Link>
+    <Link to="/login" style={{padding:"10px"}}>Sign In</Link>
   </Box>
       </Flex>
     </Box>

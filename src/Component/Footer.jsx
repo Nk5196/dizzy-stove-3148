@@ -5,8 +5,8 @@ import { Container,HStack,Box,Link,Image,Text, Grid, GridItem, Heading, VStack, 
 
 export default function Footer() {
   return (<>
- <Container  maxW='90%' p="0" borderBottom='1px' borderColor='gray.300'  mt="50px">
-   <Box p="10px" textAlign="center" >
+ <Container  maxW='90%' p="0" borderBottom='1px' borderColor='gray.300'  mt="10px">
+   <Box p="10px" textAlign="center" mb="20px" >
     <Heading fontWeight="semibold" size="15px">Explore a world of travel with Expedia</Heading>
      <Link fontSize="14px" color='blue.500'>Discover new places and experiences</Link>
    </Box>
@@ -59,7 +59,7 @@ export default function Footer() {
 </Container> 
 <Box w="100%" p="20px" alignItems="center" >
   <Image 
-  marginLeft="48%"   w="200px"  src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"></Image>
+  marginLeft="48%"   w="180px"  src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"></Image>
   <Text fontSize="11px" textAlign="center">© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</Text>
 
 </Box>
