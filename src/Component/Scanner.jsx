@@ -4,7 +4,7 @@ import { Flex,Center,Text,Image,Heading ,Button,InputGroup,Input,InputLeftAddon,
 
 export default function Scanner() {
   return (
-    <Container  maxW='90%' mb="250" p="0" border='1px'borderRadius="12px" borderColor='gray.300' boxShadow='md' mt="60px">
+    <Container  maxW='90%' mb="10" p="0" border='1px'borderRadius="12px" borderColor='gray.300' boxShadow='md' mt="60px">
        <Flex color='white' >
             <Center w='440px' >
               <Image src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"/>
