@@ -17,7 +17,7 @@ import XpediaIcon from '../icon/xpedia';
 
 export default function Login() {
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
  
@@ -28,9 +28,9 @@ export default function Login() {
       email: email,
       password: password
     };
-console.log(users)
+    navigate("/");
   }
-  
+
   return (
   <>
     <Flex borderBottom='1px' pb="5px" borderColor='gray.300' justifyContent="center" px="15px" mt="5px">
