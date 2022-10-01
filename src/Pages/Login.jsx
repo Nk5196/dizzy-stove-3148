@@ -20,8 +20,7 @@ export default function Login() {
   // const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const { state, dispatch } = useContext(AuthContext);
-  
+ 
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -29,25 +28,9 @@ export default function Login() {
       email: email,
       password: password
     };
-
-    // dispatch(loading);
-    // axios
-    //   .post("https://reqres.in/api/login", users)
-    //   .then((res) => {
-    //     const action = success(res.data.token);
-    //     dispatch(action);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+console.log(users)
   }
-  // useEffect(() => {
-  //   if (state.authStatus) {
-  //     navigate("/");
-  //   }
-  // }, [state.authStatus, navigate]);
-
-
+  
   return (
   <>
     <Flex borderBottom='1px' pb="5px" borderColor='gray.300' justifyContent="center" px="15px" mt="5px">
