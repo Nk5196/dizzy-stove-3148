@@ -2,10 +2,18 @@ import React, {useState } from 'react'
 import { Container,Tabs, TabList,Box,Spacer, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Flex,Input,Stack,Checkbox,Button,InputGroup,InputLeftElement,InputLeftAddon } from '@chakra-ui/react'
 import { MdLocationPin,MdPerson } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function TabForSearchTAb() {
+  const navigate = useNavigate();
+
+  const handleSearch = (event) => {
+    event.preventDefault();
    
+    navigate("/search");
+  }
+
   return (
     <Container maxW='90%' border='1px'borderRadius="12px" borderColor='gray.300' boxShadow='md' mt="60px">
     <Tabs mt="20px">
@@ -63,7 +71,7 @@ export default function TabForSearchTAb() {
                 </Checkbox>
            </Stack>
            
-           <Button marginLeft="41%" my="20px" fontSize="large" py="23px" px="60px" colorScheme='messenger' >Search</Button>
+           <Button onClick={handleSearch} marginLeft="41%" my="20px" fontSize="large" py="23px" px="60px" colorScheme='messenger' >Search</Button>
           
           </Box>
       </TabPanel>
@@ -106,7 +114,7 @@ export default function TabForSearchTAb() {
             </InputGroup>
           </Flex>
           
-           <Button marginLeft="41%" my="20px" fontSize="large" py="23px" px="60px" colorScheme='messenger' >Search</Button>
+           <Button  marginLeft="41%" my="20px" fontSize="large" py="23px" px="60px" colorScheme='messenger' >Search</Button>
           
           </Box>
       </TabPanel>
