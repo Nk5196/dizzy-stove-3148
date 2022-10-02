@@ -17,7 +17,7 @@ import XpediaIcon from '../icon/xpedia'
 
 function Navbar() {
   return (
-    <Box m="15px" px="30px">
+    <Box m="15px" pb="12px" borderBottom="1px" borderColor='gray.400' px="30px">
       <Flex>
         <HStack px="10px">
       <Link p='4'>
